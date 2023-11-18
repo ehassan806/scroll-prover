@@ -11,7 +11,7 @@ use std::env;
 #[cfg(feature = "prove_verify")]
 #[test]
 fn test_agg_prove_verify() {
-    let output_dir = init_env_and_log("agg_tests");
+    let output_dir = init_env_and_log("agg_tests"); //ouptput directory
     log::info!("Initialized ENV and created output-dir {output_dir}");
 
     let trace_paths = vec!["./tests/extra_traces/new.json".to_string()];
